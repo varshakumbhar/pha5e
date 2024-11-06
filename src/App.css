@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App
+{
+  background-color: #212121;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#Home h1
+{
+    padding-top: 50px;
+    font-family: Area Normal, Helvetica, Arial, sans-serif;
+    font-size: 8vw;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 100px;
+    -webkit-text-stroke-color:azure;
+    -webkit-text-stroke-width: 0.1px;
+    transition: color 0.1s ;
+    color:#212121;
+    position: relative;
+    z-index: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ #Home h1:hover
+{
+     color:white;  
+}
+
+#team-row1 div{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#team-row1 h1
+{
+    padding-top: 20px;
+    font-size: 8vw;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow:visible;
+    margin: 0;
+    
+}
+#div-row2 h1
+{
+     text-transform: uppercase;
+     font-weight:bolder
+}
+.h1
+{
+   text-align: center;
+   font-size: 2vw;
+ 
+
+}
+.image4
+{
+  width: 100%;     
+  height: 450px;
+  overflow: hidden;
+  background-size: cover;
+  
+}
+.image
+{
+    height: 200px;
+    
+    background-size: cover;
+}
+ #Home #image1
+{
+   position: absolute;
+   top: 30%;
+   left: 15%;
+   width: 350px;
+   
+}
+@media (min-width:768px) and (max-width:1200px)  
+{ 
+   #Home #image1
+      {
+         width: 250px;
+         height: 180px;
+         top: 15%;
+
+      }   
+}
+@media (min-width:1024px) and (max-width:1280px)  
+{ 
+   #Home #image1
+      {
+        
+        top:25%
+
+      }   
+}
+
+
+@media  (max-width:576px)  
+{ 
+   #Home #image1
+      {
+        display: none;
+
+      }   
+}
+#Home #image2
+{
+   position:absolute;
+   top: 10%;
+   right:25%;
+    width: 350px;
+}
+@media (min-width:768px) and (max-width:1200px)  
+{ 
+   #Home #image2
+      {
+         width: 250px;
+         height: 180px;
+         left: 50%;
+
+      }   
+}
+@media (min-width:1024px) and (max-width:1280px)  
+{ 
+   #Home #image2
+      {
+         top:30%
+
+      }   
+}
+@media  (width:1280px)  
+{ 
+   #Home #image2
+      {
+         top:20%
+
+      }   
+}
+@media  (max-width:576px)  
+{ 
+   #Home #image2
+      {
+        display: none;
+
+      }   
+}
+#Home #image3
+{
+   position: absolute;
+   top: 40%;
+   left: 20%;
+    width: 350px;
+  
+}
+@media (min-width:768px) and (max-width:1200px)  
+{ 
+   #Home #image3
+      {
+         width: 250px;
+         height: 180px;
+         left: 25%;
+
+      }   
+}
+@media (min-width:1024px) and (max-width:1280px)  
+{ 
+   #Home #image3
+      {
+         top:65%
+
+      }   
+}@media  (width:1280px)  
+{ 
+   #Home #image3
+      {
+         top:70%;
+         left:28%;
+
+      }   
+}
+@media  (max-width:576px)  
+{ 
+   #Home #image3
+      {
+        display: none;
+
+      }   
+}
+#Home #image4
+{
+   position: absolute;
+   top: 60%;
+   right: 15%;
+   width: 350px;
+   
+}
+@media (min-width:768px) and (max-width:1200px)  
+{ 
+   #Home #image4
+      {
+         width: 250px;
+         height: 180px;
+         top: 30%;
+
+      }   
+}
+@media (min-width:1024px) and (max-width:1280px)  
+{ 
+   #Home #image4
+      {
+         top:65%
+
+      }   
+}
+@media  (width:1280px)  
+{ 
+   #Home #image4
+      {
+         top:50%
+
+      }   
+}
+@media  (max-width:576px)  
+{ 
+   #Home #image4
+      {
+        display: none;
+
+      }   
+}
+
+#Home
+{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+   height: 800px;
+}
+@media  (max-width:576px)  
+{ 
+   #Home 
+      {
+        height: 400px;
+      }   
 }
